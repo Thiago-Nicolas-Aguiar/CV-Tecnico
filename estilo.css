@@ -1,0 +1,120 @@
+/* 1. CONFIGURACIÓN GLOBAL (Sin cambios) */
+:root {
+    --color-primario: #ffb742;
+    /* Naranja base */
+    --color-hover: #ffcf75;
+    /* Un naranja más claro para el brillo */
+    --bg-oscuro: #1a1d21;
+    /* Un gris un poco más oscuro para que resalte el brillo */
+    --bg-tarjeta: #2c313a;
+    --texto-blanco: #ffffff;
+    --texto-suave: #e0e0e0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-oscuro);
+    color: var(--texto-blanco);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* 2. CONTENEDOR Y ENCABEZADO */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.encabezado h1 {
+    color: var(--color-primario);
+    font-size: 2.2rem;
+    /* Un poco más grande para que destaque */
+    border-bottom: 2px solid var(--color-primario);
+    display: inline-block;
+    margin-bottom: 15px;
+    /* Un pequeño glow suave al h1 */
+    text-shadow: 0 0 10px rgba(255, 183, 66, 0.5);
+}
+
+.encabezado p {
+    color: var(--texto-suave);
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+}
+
+/* 3. EL GRID DE TARJETAS */
+ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    /* Un poco más de espacio entre tarjetas */
+    padding: 0;
+}
+
+ul li {
+    background-color: var(--bg-tarjeta);
+    border: 1px solid rgba(255, 165, 0, 0.1);
+    /* Borde muy sutil inicial */
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    /* Para que el glow no se corte feo */
+}
+
+/* EL EFECTO MÁGICO: HOVER CON GLOW */
+ul li:hover {
+    transform: translateY(-8px);
+    /* Levitación un poco más pronunciada */
+    background-color: #323842;
+    /* Cambiamos el fondo ligeramente */
+
+    /* Esta es la clave del glow: un box-shadow naranja vibrante */
+    box-shadow: 0 10px 30px rgba(255, 183, 66, 0.4),
+        0 0 15px rgba(255, 183, 66, 0.2);
+
+    /* También encendemos el borde */
+    border-color: rgba(255, 183, 66, 0.6);
+}
+
+/* 4. ELEMENTOS INTERNOS */
+h2 {
+    color: var(--color-primario);
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* Un glow sutil también al h2 al pasar el mouse por la tarjeta */
+ul li:hover h2 {
+    text-shadow: 0 0 8px rgba(255, 183, 66, 0.6);
+}
+
+a {
+    color: var(--texto-blanco);
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: var(--color-hover);
+    text-shadow: 0 0 5px rgba(255, 207, 117, 0.5);
+}
+
+/* 5. FOOTER (Sin cambios) */
+footer {
+    text-align: center;
+    color: var(--texto-suave);
+    margin-top: 60px;
+    padding: 30px;
+    font-size: 0.95rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
