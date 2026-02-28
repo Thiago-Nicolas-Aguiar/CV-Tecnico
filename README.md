@@ -15,7 +15,7 @@
 ## Vista previa
 <img width="1007" height="593" alt="imagen" src="https://github.com/user-attachments/assets/fbf691ea-8f87-4d9c-96da-0455025263d0" />
 
->**Puedes ver la version completa en el siguiente enlace: [https://thiago-nicolas-aguiar.github.io/CV-Tecnico/]
+> **Puedes ver la version completa en el siguiente enlace: [https://thiago-nicolas-aguiar.github.io/CV-Tecnico/]
 
 ## Autor
   **Thiago Nicolas Aguiar** -
