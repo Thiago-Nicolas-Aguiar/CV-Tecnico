@@ -18,6 +18,6 @@
 >**Puedes ver la version completa en el siguiente enlace: [https://thiago-nicolas-aguiar.github.io/CV-Tecnico/]
 
 ## Autor
-  **Thiago Nicolas Aguiar**
-  [LinkedIn](https://www.linkedin.com/in/thiago-nicolas-aguiar-1a53213b3/)
+  **Thiago Nicolas Aguiar** -
+  [LinkedIn](https://www.linkedin.com/in/thiago-nicolas-aguiar-1a53213b3/) -
   [GitHub](https://github.com/Thiago-Nicolas-Aguiar)
