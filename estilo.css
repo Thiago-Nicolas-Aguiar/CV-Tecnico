@@ -37,14 +37,15 @@ body {
     /* Un poco más grande para que destaque */
     border-bottom: 2px solid var(--color-primario);
     display: inline-block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     /* Un pequeño glow suave al h1 */
     text-shadow: 0 0 10px rgba(255, 183, 66, 0.5);
+    padding-top: 20px;
 }
 
 .encabezado p {
     color: var(--texto-suave);
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-size: 1.1rem;
 }
 
@@ -55,7 +56,8 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 25px;
     /* Un poco más de espacio entre tarjetas */
-    padding: 0;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
 ul li {
@@ -67,6 +69,7 @@ ul li {
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
     position: relative;
     overflow: hidden;
+    text-align: center;
     /* Para que el glow no se corte feo */
 }
 
